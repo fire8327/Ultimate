@@ -7,14 +7,90 @@
     <link rel="stylesheet" href="Assets/CSS/custom.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Главная</title>
+    <script>
+        tailwind.config = {
+          darkMode: 'class',
+        }
+      </script>
 </head>
-<body>
-    <header>
-        
+<body class="bg-white dark:bg-black">
+    <header class="w-full flex items-center text-black dark:text-white text-[22px] justify-between">
+        <a href="" class="text-center w-[163px] h-[50px] items-center flex justify-center">Shop</a>
+        <div class="w-px h-[50px] bg-black dark:bg-white"></div>    
+        <a href="" class="text-center w-[163px] h-[50px] items-center flex justify-center">Discover</a>
+        <div class="w-px h-[50px] bg-black dark:bg-white"></div>  
+        <p class="text-center tracking-[0.64rem] text-[32px] w-[394px] h-[50px] items-center flex justify-center">COMPANY</p>  
+        <div class="w-px h-[50px] bg-black dark:bg-white"></div>  
+        <input type="text" placeholder="&#128269; Search" class="placeholder-black dark:placeholder-white grow h-7 mx-3 border border-black dark:border-white text-center items-center bg-[#E7E7E7] dark:bg-[#181818] rounded-full">
+        <div class="w-px h-[50px] bg-black dark:bg-white"></div>  
+        <a href="" class="text-center w-[163px] h-[50px] items-center flex justify-center">Cart</a>
+        <div class="w-px h-[50px] bg-black dark:bg-white"></div>  
+        <svg width="22" height="22" class="fill-black dark:fill-white mx-[14px]" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19.5312 0H2.34375C1.72215 0 1.12601 0.24693 0.686468 0.686469C0.24693 1.12601 0 1.72215 0 2.34375L0 19.5312C0 20.1529 0.24693 20.749 0.686468 21.1885C1.12601 21.6281 1.72215 21.875 2.34375 21.875H9.04541V14.438H5.96924V10.9375H9.04541V8.26953C9.04541 5.23486 10.8521 3.55859 13.6191 3.55859C14.9443 3.55859 16.3301 3.79492 16.3301 3.79492V6.77344H14.8032C13.2988 6.77344 12.8296 7.70703 12.8296 8.66455V10.9375H16.188L15.6509 14.438H12.8296V21.875H19.5312C20.1529 21.875 20.749 21.6281 21.1885 21.1885C21.6281 20.749 21.875 20.1529 21.875 19.5312V2.34375C21.875 1.72215 21.6281 1.12601 21.1885 0.686469C20.749 0.24693 20.1529 0 19.5312 0Z"/>
+        </svg>            
+        <div class="w-px h-[50px] bg-black dark:bg-white"></div>  
+        <svg width="22" height="22" viewBox="0 0 22 22" class="fill-black dark:fill-white mx-[14px]" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.946 5.33081C7.84058 5.33081 5.33569 7.83569 5.33569 10.9412C5.33569 14.0466 7.84058 16.5515 10.946 16.5515C14.0515 16.5515 16.5564 14.0466 16.5564 10.9412C16.5564 7.83569 14.0515 5.33081 10.946 5.33081ZM10.946 14.5886C8.93921 14.5886 7.29858 12.9529 7.29858 10.9412C7.29858 8.92944 8.93433 7.2937 10.946 7.2937C12.9578 7.2937 14.5935 8.92944 14.5935 10.9412C14.5935 12.9529 12.9529 14.5886 10.946 14.5886ZM18.0945 5.10132C18.0945 5.82886 17.5085 6.40991 16.7859 6.40991C16.0584 6.40991 15.4773 5.82397 15.4773 5.10132C15.4773 4.37866 16.0632 3.79272 16.7859 3.79272C17.5085 3.79272 18.0945 4.37866 18.0945 5.10132ZM21.8103 6.42944C21.7273 4.67651 21.3269 3.12378 20.0427 1.84448C18.7634 0.565185 17.2107 0.164795 15.4578 0.0769043C13.6511 -0.0256348 8.23608 -0.0256348 6.42944 0.0769043C4.6814 0.159912 3.12866 0.560303 1.84448 1.8396C0.560303 3.1189 0.164795 4.67163 0.0769043 6.42456C-0.0256348 8.2312 -0.0256348 13.6462 0.0769043 15.4529C0.159912 17.2058 0.560303 18.7585 1.84448 20.0378C3.12866 21.3171 4.67651 21.7175 6.42944 21.8054C8.23608 21.908 13.6511 21.908 15.4578 21.8054C17.2107 21.7224 18.7634 21.322 20.0427 20.0378C21.322 18.7585 21.7224 17.2058 21.8103 15.4529C21.9128 13.6462 21.9128 8.23608 21.8103 6.42944ZM19.4763 17.3914C19.0955 18.3484 18.3582 19.0857 17.3962 19.4714C15.9558 20.0427 12.5378 19.9109 10.946 19.9109C9.35425 19.9109 5.9314 20.0378 4.49585 19.4714C3.53882 19.0906 2.80151 18.3533 2.41577 17.3914C1.84448 15.9509 1.97632 12.533 1.97632 10.9412C1.97632 9.34937 1.84937 5.92651 2.41577 4.49097C2.79663 3.53394 3.53394 2.79663 4.49585 2.41089C5.93628 1.8396 9.35425 1.97144 10.946 1.97144C12.5378 1.97144 15.9607 1.84448 17.3962 2.41089C18.3533 2.79175 19.0906 3.52905 19.4763 4.49097C20.0476 5.9314 19.9158 9.34937 19.9158 10.9412C19.9158 12.533 20.0476 15.9558 19.4763 17.3914Z"/>
+        </svg>            
+        <div class="w-px h-[50px] bg-black dark:bg-white"></div>  
+        <svg width="25" height="22" viewBox="0 0 25 22" class="fill-black dark:fill-white mx-[14px]" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22.5738 1.49576C19.8981 -0.784512 15.9186 -0.374356 13.4625 2.15982L12.5006 3.15104L11.5387 2.15982C9.08751 -0.374356 5.10314 -0.784512 2.42736 1.49576C-0.639049 4.11295 -0.800182 8.81021 1.94396 11.6471L11.3922 21.403C12.0026 22.0329 12.9938 22.0329 13.6041 21.403L23.0524 11.6471C25.8014 8.81021 25.6402 4.11295 22.5738 1.49576Z"/>
+        </svg>            
+        <div class="w-px h-[50px] bg-black dark:bg-white"></div>  
+        <button type="button" id="toggler">
+            <svg width="25" height="25" viewBox="0 0 25 25" class="fill-black dark:fill-white mx-[14px]" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 12.1094C0 18.7972 5.42153 24.2188 12.1094 24.2188C18.7972 24.2188 24.2188 18.7972 24.2188 12.1094C24.2188 5.42158 18.7972 0 12.1094 0C5.42158 0 0 5.42153 0 12.1094ZM12.1094 21.0938V3.125C17.0754 3.125 21.0938 7.14409 21.0938 12.1094C21.0938 17.0754 17.0747 21.0938 12.1094 21.0938Z"/>
+            </svg>       
+        </button>     
     </header>  
 
-    <footer>
-        
+    <div class="w-full py-40 pl-[52px] pr-[100px] flex justify-between">
+        <div class="flex flex-col items-center">
+            <img src="Assets/Images/items/1.png" alt="" class="border border-black dark:border-white">
+            <img src="Assets/Images/items/2.png" alt="" class="border border-black dark:border-white mt-[52px]">
+            <a href="" class="text-[22px] mt-8 text-black dark:text-white">View</a>
+        </div>
+        <img src="Assets/Images/items/3.png" alt="" class="ml-[118px] border border-black dark:border-white shadow-[7px_13px_0px_rgba(0,0,0,0.75)] dark:shadow-[7px_13px_0px_rgba(255,255,255,0.75)]">
+        <div class="flex flex-col ml-[143px] text-black dark:text-white text-[22px]">
+            <p>ITEM NAME <br> $235.00</p>
+            <button class="mt-8 border border-black dark:border-white w-[443px] h-[68px] flex items-center justify-center">Personalise</button>
+            <button class="mt-5 border border-black dark:border-white bg-black dark:bg-white text-white dark:text-black w-[443px] h-[68px] flex items-center justify-center relative">
+                <span>Add to Cart</span>
+                <div class="absolute flex items-center justify-center w-[64px] h-[66px] top-0 right-0 bg-white dark:bg-black">
+                    <img src="Assets/Images/icons/plus.svg" alt="">
+                </div>                  
+            </button>
+            <p class="mt-7">
+                *Free delivery on all orders over USD $50 <br>
+                *Check availability in boutiques
+            </p>
+            <button class="mt-20 border border-black dark:border-white w-[443px] h-[68px] flex items-center justify-center relative">
+                <span>Material</span>
+                <svg class="fill-black dark:fill-white absolute right-6" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.895 9.30176L20.979 10.3857C21.438 10.8447 21.438 11.5869 20.979 12.041L11.4917 21.5332C11.0327 21.9922 10.2905 21.9922 9.83643 21.5332L0.344238 12.041C-0.114746 11.582 -0.114746 10.8398 0.344238 10.3857L1.42822 9.30176C1.89209 8.83789 2.64893 8.84766 3.10303 9.32129L8.7085 15.2051V1.17188C8.7085 0.522461 9.23096 0 9.88037 0H11.4429C12.0923 0 12.6147 0.522461 12.6147 1.17188V15.2051L18.2202 9.32129C18.6743 8.84277 19.4312 8.83301 19.895 9.30176Z"/>
+                </svg>                    
+            </button>
+            <button class="mt-5 border border-black dark:border-white w-[443px] h-[68px] flex items-center justify-center relative">
+                <span>Dimensions</span>
+                <svg class="fill-black dark:fill-white absolute right-6" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.895 9.30176L20.979 10.3857C21.438 10.8447 21.438 11.5869 20.979 12.041L11.4917 21.5332C11.0327 21.9922 10.2905 21.9922 9.83643 21.5332L0.344238 12.041C-0.114746 11.582 -0.114746 10.8398 0.344238 10.3857L1.42822 9.30176C1.89209 8.83789 2.64893 8.84766 3.10303 9.32129L8.7085 15.2051V1.17188C8.7085 0.522461 9.23096 0 9.88037 0H11.4429C12.0923 0 12.6147 0.522461 12.6147 1.17188V15.2051L18.2202 9.32129C18.6743 8.84277 19.4312 8.83301 19.895 9.30176Z"/>
+                </svg>                    
+            </button>
+        </div>
+    </div>
+
+    <footer class="w-full flex items-center text-black dark:text-white text-[22px] justify-between">
+        <a href="" class="text-center w-[163px] h-[50px] items-center flex justify-center bg-black dark:bg-white text-white dark:text-black">Cart</a>
+        <div class="w-px h-[50px] bg-black dark:bg-white"></div>
+        <a href="" class="text-center w-[163px] h-[50px] items-center flex justify-center">Overview</a>
+        <div class="w-px h-[50px] bg-black dark:bg-white"></div>
+        <a href="" class="text-center w-[163px] h-[50px] items-center flex justify-center">Boutique</a>
+        <div class="w-px h-[50px] bg-black dark:bg-white"></div>
+        <a href="" class="text-center w-[163px] h-[50px] items-center flex justify-center">About Us</a>
+        <div class="w-px h-[50px] bg-black dark:bg-white"></div>
+        <a href="" class="text-center w-[163px] h-[50px] items-center flex justify-center">FAQ</a>
+        <div class="w-px h-[50px] bg-black dark:bg-white"></div>
+        <a href="" class="text-center w-[163px] h-[50px] items-center flex justify-center grow">ITEM SECTION NAME</a>
     </footer>
     
 	<script src="https://code.jquery.com/jquery-3.6.3.min.js" 
